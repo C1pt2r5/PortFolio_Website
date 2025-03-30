@@ -1,3 +1,24 @@
+// Theme Toggle with LocalStorage
+const themeSwitch = document.getElementById('theme-switch');
+const body = document.body;
+
+// Check saved theme
+if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    themeSwitch.checked = true;
+}
+
+// Toggle event listener
+themeSwitch.addEventListener('change', () => {
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
+});
+
 // Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

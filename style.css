@@ -63,6 +63,107 @@ nav ul li a:hover {
     color: #00bcd4;
 }
 
+/* Light Mode (Default) */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --primary-color: #00bcd4;
+    --secondary-color: #f4f4f4;
+    --toggle-bg: #00bcd4;
+    --toggle-fg: #ffffff;
+}
+
+/* Dark Mode */
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #00bcd4;
+    --secondary-color: #1e1e1e;
+    --toggle-bg: #ffffff;
+    --toggle-fg: #121212;
+}
+
+/* General Styles */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.5s, color 0.5s;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    transition: color 0.5s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Toggle Switch Styling */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+}
+
+#theme-switch {
+    display: none;
+}
+
+.toggle-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    height: 30px;
+    background: var(--toggle-bg);
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.toggle-label::before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: var(--toggle-fg);
+    border-radius: 50%;
+    left: 3px;
+    top: 2px;
+    transition: 0.3s;
+}
+
+#theme-switch:checked + .toggle-label::before {
+    left: 31px;
+}
+
+.toggle-icon {
+    font-size: 18px;
+    width: 50%;
+    text-align: center;
+    line-height: 30px;
+    z-index: 1;
+    transition: opacity 0.3s;
+}
+
+/* Show sun or moon icon based on mode */
+#theme-switch:not(:checked) + .toggle-label .toggle-icon:first-child {
+    opacity: 1;
+}
+
+#theme-switch:checked + .toggle-label .toggle-icon:first-child {
+    opacity: 0;
+}
+
+#theme-switch:checked + .toggle-label .toggle-icon:last-child {
+    opacity: 1;
+}
+
+#theme-switch:not(:checked) + .toggle-label .toggle-icon:last-child {
+    opacity: 0;
+}
+
 /* Sections */
 section {
     padding: 60px 20px;
