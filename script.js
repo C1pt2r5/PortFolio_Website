@@ -64,19 +64,29 @@ function showProject(index) {
 }
 
 // Initial display
-showProject(currentIndex);
-
-// Next Button
-nextBtn.addEventListener('click', () => {
+function autoPlayProjects() {
     currentIndex = (currentIndex + 1) % projectCards.length;
     showProject(currentIndex);
+}
+
+// Auto-play interval
+let projectInterval = setInterval(autoPlayProjects, 5000); 
+
+// Add navigation button functionality
+nextBtn.addEventListener('click', () => {
+    clearInterval(projectInterval);  // Reset interval on manual navigation
+    currentIndex = (currentIndex + 1) % projectCards.length;
+    showProject(currentIndex);
+    projectInterval = setInterval(autoPlayProjects, 5000);
 });
 
-// Previous Button
 prevBtn.addEventListener('click', () => {
+    clearInterval(projectInterval);  // Reset interval on manual navigation
     currentIndex = (currentIndex - 1 + projectCards.length) % projectCards.length;
     showProject(currentIndex);
+    projectInterval = setInterval(autoPlayProjects, 5000);
 });
+
 
 
 let skillIndex = 0;
