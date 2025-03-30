@@ -55,56 +55,127 @@
 <!-- Skills Section -->
 <section id="skills">
     <h2>Skills</h2>
-    <ul>
-        <li>Programming Language: Python, HTML/CSS , C++, JavaScript, Node.js</li>
-        <li>Frameworks and Libraries: Express.js , Mongoose, React.js</li>
-        <li>Database Technologies: MongoDB </li>
-        <li>Cybersecurity Tools: Burp Suite,Nmap, Wireshark , Kali Linux, Metasploit , OWASP ZAP , OSINT Tools, SQLMap, Pwn Tools</li>
-        <li>Version Control: github</li>
-        <li>Cybersecurity Concepts: Vulnerability Assessment and Penetration Testing, Malware Analysis, Threat Hunting</li>
-        <li>Certifications: Comptia Security+ (SYO-701), Ethical Hacking Essentials (EHE) from EC-Council, Network Defense Essentials (NDE) from EC-Council, Fundamentals of Information Security from Infosys</li>
-        <li>Penetration Testing Enthussiast</li>
-    </ul>
+
+    <div class="notebook-frame">
+        
+        <!-- Skill 1: Programming Languages -->
+        <div class="skill-card active">
+            <h3>💻 Programming Languages</h3>
+            <p>Python, HTML/CSS, C++, JavaScript, Node.js</p>
+        </div>
+
+        <!-- Skill 2: Frameworks and Libraries -->
+        <div class="skill-card">
+            <h3>🛠️ Frameworks and Libraries</h3>
+            <p>Express.js, Mongoose, React.js</p>
+        </div>
+
+        <!-- Skill 3: Database Technologies -->
+        <div class="skill-card">
+            <h3>🗄️ Database Technologies</h3>
+            <p>MongoDB</p>
+        </div>
+
+        <!-- Skill 4: Cybersecurity Tools -->
+        <div class="skill-card">
+            <h3>🔒 Cybersecurity Tools</h3>
+            <p>Burp Suite, Nmap, Wireshark, Kali Linux, Metasploit, OWASP ZAP, OSINT Tools, SQLMap, Pwn Tools</p>
+        </div>
+
+        <!-- Skill 5: Version Control -->
+        <div class="skill-card">
+            <h3>🔧 Version Control</h3>
+            <p>GitHub</p>
+        </div>
+
+        <!-- Skill 6: Cybersecurity Concepts -->
+        <div class="skill-card">
+            <h3>🛡️ Cybersecurity Concepts</h3>
+            <p>Vulnerability Assessment and Penetration Testing, Malware Analysis, Threat Hunting</p>
+        </div>
+
+        <!-- Skill 7: Certifications -->
+        <div class="skill-card">
+            <h3>📜 Certifications</h3>
+            <p>Comptia Security+ (SYO-701), Ethical Hacking Essentials (EHE) from EC-Council, Network Defense Essentials (NDE) from EC-Council, Fundamentals of Information Security from Infosys</p>
+        </div>
+
+        <!-- Skill 8: Enthusiasm -->
+        <div class="skill-card">
+            <h3>🔥 Penetration Testing Enthusiast</h3>
+            <p>Passionate about ethical hacking and security research.</p>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <button id="prev-skill-btn">⬅️ Previous</button>
+            <button id="next-skill-btn">Next ➡️</button>
+        </div>
+    </div>
 </section>
+
 
 <!-- Projects Section -->
 <section id="projects">
     <h2>Projects</h2>
-    <div class="project-card">
-        <h3>AI-Powered Threat Detection System(Python,Metasploit, Socket-learn, Flask)</h3>
-        <p>I developed an automated security dashboard designed to monitor vulnerabilities and threat trends.
-            The system utilizes machine learning algorithms to analyze network traffic and identify potential threats.
-            I used Python scripts and APIs to collect real-time security logs and vulnerability reports.The data was processed using Pandas and NumPy to extract meaningful metrics like threat occurrences and severity levels.I built the dashboard using React.js and Chart.js, presenting visual insights through graphs and charts, allowing for easier interpretation of threat trends.
-            To streamline reporting, I utilized: Python for data processing and analysis. Matplotlib and Seaborn to generate visual reports highlighting vulnerability trends.Jupyter Notebooks to create reusable reporting templates.The reports included metrics like severity distribution, impacted assets, and resolution timelines, which improved decision-making efficiency.
-            I applied SMOTE (Synthetic Minority Over-sampling Technique) to balance the classes, which significantly reduced false positives by 20%.
-        </p>
-        <a href="https://github.com/C1pt2r5/-AI-driven-security-monitoring" target="_blank">GitHub Link</a>
-    </div>
-    <div class="project-card">
-        <h3>Anomaly Detection Technique(Python, Scapy.py, Socket.io, Random Forest Algorithm)</h3>
-        <p>The Anomaly Detection System is an advanced Intrusion Detection/Prevention System (IDS/IPS) that employs machine learning to identify zero-day attacks. Built using Python, Scapy.py, and Socket.io, the system leverages the Random Forest Algorithm to detect suspicious network activities. The integration of ML models not only improves detection accuracy but also reduces false positives by 20%. This system is crucial for safeguarding networks from emerging threats and maintaining robust security postures.</p>
-        <a href="https://github.com/C1pt2r5/Anomaly-Detection-" target="_blank">GitHub Link</a>
-    </div>
-    <div class="project-card">
-        <h3>Network Traffic Analysis(Python, Socket-learn)</h3>
-        <p>The Visual Packet Tracker is a tool developed using Python and the Socket-learn library to capture network packets in real time. It leverages TCP/IP and UDP protocols to track data transmission over networks. By utilizing efficient parsing algorithms, it reduces packet processing time by 30%. This project significantly enhances network monitoring capabilities by providing a clear visual representation of packet flow, helping network administrators detect anomalies and performance issues promptly.</p>
-        <a href="https://github.com/C1pt2r5/Network_traffic_Analyser" target="_blank">GitHub Link</a>
-    </div>
-    <div class="project-card">
-        <h3>Sorting Visualizar(Merge Sort, Heap Sort, Insertion Sort, Selection Sort, Bubble Sort) </h3>
-        <p>This project is an interactive visualization tool that helps users understand various sorting algorithms. Built with HTML, CSS, and JavaScript, the Sorting Visualizer offers real-time visual representations of sorting techniques such as Merge Sort, Heap Sort, Insertion Sort, Selection Sort, and Bubble Sort. It enhances users' grasp of algorithm efficiency and behavior by illustrating the sorting process step by step.</p>
-        <a href="https://github.com/C1pt2r5/Sorting-visualizer" target="_blank">GitHub Link</a>
+    
+    <div class="notebook-frame">
+        <!-- Project 1 -->
+        <div class="project-card active">
+            <h3>AI-Powered Threat Detection System (Python, Metasploit, Socket-learn, Flask)</h3>
+            <p>I developed an automated security dashboard designed to monitor vulnerabilities and threat trends. 
+               It uses machine learning to analyze network traffic and detect potential threats.
+               I used Python scripts and APIs to collect real-time security logs and vulnerability reports.The data was processed using Pandas and NumPy to extract meaningful metrics like threat occurrences and severity levels.I built the dashboard using React.js and Chart.js, presenting visual insights through graphs and charts, allowing for easier interpretation of threat trends.
+               To streamline reporting, I utilized: Python for data processing and analysis. Matplotlib and Seaborn to generate visual reports highlighting vulnerability trends.Jupyter Notebooks to create reusable reporting templates.The reports included metrics like severity distribution, impacted assets, and resolution timelines, which improved decision-making efficiency.
+               I applied SMOTE (Synthetic Minority Over-sampling Technique) to balance the classes, which significantly reduced false positives by 20%.
+            </p>
+            <a href="https://github.com/C1pt2r5/-AI-driven-security-monitoring" target="_blank">GitHub Link</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>Anomaly Detection Technique (Python, Scapy.py, Socket.io, Random Forest)</h3>
+            <p>Advanced IDS/IPS system using machine learning to detect zero-day attacks, Built using Python, Scapy.py, and Socket.io, the system leverages the Random Forest Algorithm to detect suspicious network activities. The integration of ML models not only improves detection accuracy but also reduces false positives by 20%. This system is crucial for safeguarding networks from emerging threats and maintaining robust security postures..</p>
+            <a href="https://github.com/C1pt2r5/Anomaly-Detection-" target="_blank">GitHub Link</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <h3>Network Traffic Analysis (Python, Socket-learn)</h3>
+            <p>Real-time packet tracker using TCP/IP and UDP protocols, developed using Python and the Socket-learn library to capture network packets in real time. It leverages TCP/IP and UDP protocols to track data transmission over networks. By utilizing efficient parsing algorithms, it reduces packet processing time by 30%. This project significantly enhances network monitoring capabilities by providing a clear visual representation of packet flow, helping network administrators detect anomalies and performance issues promptly.</p>
+            <a href="https://github.com/C1pt2r5/Network_traffic_Analyser" target="_blank">GitHub Link</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+            <h3>Sorting Visualizer (HTML, CSS, JS)</h3>
+            <p>Interactive visualization tool for sorting algorithms like Merge Sort, Heap Sort, Insertion Sort, and more.</p>
+            <a href="https://github.com/C1pt2r5/Sorting-visualizer" target="_blank">GitHub Link</a>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <button id="prev-btn">⬅️ Previous</button>
+            <button id="next-btn">Next ➡️</button>
+        </div>
     </div>
 </section>
+
 
 <!-- Contact Section -->
 <section id="contact">
     <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/{YOUR_FORM_ID}" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+    <form action="https://formspree.io/f/mjkyeanq" method="POST">
+        <label>
+            Your email:
+            <input type="email" name="email">
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit">Send</button>
     </form>
 </section>
 
